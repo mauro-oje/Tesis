@@ -1,0 +1,92 @@
+body{
+	background: #EEEEEE;
+	font-family: Arial;
+	font-size: 16px;
+}
+
+header{
+	border: 1px solid red;
+	background: #40527e;
+	overflow: hidden;
+	padding: 0.1em;
+}
+
+header figure{
+	float: left;
+	margin: 0;
+}
+
+header h1{
+	color: #EEEEEE;
+	border: 1px solid red;
+	font-size: 1.4em;
+	font-weight: normal;
+	padding: 0.8em 0.1em 0.5em 0.1em;
+}
+
+header #logo img{
+	width: 102px;
+	float: left;
+	border-right: 1px solid red;
+	padding-right: 0.5em;
+	margin-right: 0.5em;
+}
+
+nav{
+	background: #80BCA3;
+	padding: 0 0.3em;
+}
+
+nav ul{
+	list-style:none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li{
+	display: inline-block;
+	margin: 0 1.2em 0 0;
+}
+
+nav ul li a{
+	color: white;
+	display: block;
+	padding: 0.3em 0;
+	text-decoration: none;
+}
+
+footer{
+	background: #40527e;
+	color: rgba(255,255,255,0.7);
+	text-align: center;
+	padding: 1em;
+}
+
+footer p:first-child{
+	margin-bottom: 0;
+}
+
+footer p:last-child{
+	margin-top: 0;
+}
+
+footer p:first-child:before{
+	content: "~ ";
+}
+
+footer p:first-child:after{
+	content: " ~";
+}
+
+footer p:last-child:before{
+	content: "- ";
+}
+
+footer p:last-child:after{
+	content: " -";
+}
+
+
+
+
+
