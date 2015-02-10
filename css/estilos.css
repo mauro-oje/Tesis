@@ -143,12 +143,23 @@ header h1{
 	padding: 0.8em 0.1em 0.5em 0.1em;
 }
 
+header #logo{
+	border-right: 1px solid white;
+	/*-webkit-transform:rotate(90deg); 
+	-moz-transform:rotate(90deg); 
+	-o-transform:rotate(90deg); 
+	-ms-transform:rotate(90deg);*/ 
+}
+
 header #logo img{
 	width: 102px;
 	float: left;
-	border-right: 1px solid white;
 	padding-right: 0.5em;
 	margin-right: 0.5em;
+	-webkit-transition:.7s;
+}
+header #logo img:hover{
+	-webkit-transform:rotate(360deg);
 }
 
 nav{
@@ -165,14 +176,21 @@ nav ul{
 
 nav ul li{
 	display: inline-block;
-	margin: 0 1.2em 0 0;
+	margin: 0 0.3em 0 0.3em;
 }
 
 nav ul li a{
+	border-right: 1px solid #40527e;
+	border-left: 1px solid #40527e;
 	color: white;
 	display: block;
-	padding: 0.3em 0;
+	padding: 0.3em 1em;
 	text-decoration: none;
+	-webkit-transition:.5s;
+}
+
+nav ul li a:hover{
+	background: #FC6D06;
 }
 
 footer{
@@ -206,7 +224,12 @@ footer p:last-child:after{
 	content: " -";
 }
 
-
+@media screen and (min-width: 900px){
+	body{
+		width: 960px;
+		margin: 0 auto;
+	}
+}
 
 
 
